@@ -11,6 +11,11 @@
 	let region = 'Asia'
 
 	$: currentitems = data.filter(item => item.region === region)
+
+	// export const snapshot = {
+	// 	capture: () => region,
+	// 	restore: (value) => (region = value)
+	// }
 </script>
 
 <Select
